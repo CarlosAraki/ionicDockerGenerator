@@ -7,5 +7,6 @@
 
 # how use
  
-docker build . -t ionic/app
-docker run -d --name ionic/app --network host ionic/app
+docker build . -t appionic/app
+docker run -d --name appionic/app --network host appionic/app
+docker run -d --name appionic/app --network host appionic/app

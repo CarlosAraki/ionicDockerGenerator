@@ -35,12 +35,13 @@ ENV PATH $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
 RUN node -v
 RUN npm install  npm@6.14.4
 RUN npm -v
-RUN npm install  @ionic/cli@6.12.3
+RUN npm install -g @ionic/cli@6.12.3
+RUN npm install -g cordova 
 RUN npm install
 COPY ./ /app/
-RUN ionic cordova build android
+#RUN ionic cordova build android --no-confirm
 
 
-FROM nginx:alpine
-RUN rm -rf /usr/share/nginx/html/*
-COPY --from=build /app/www/ /usr/share/nginx/html/
+# FROM nginx:alpine
+# RUN rm -rf /usr/share/nginx/html/*
+# COPY --from=build /app/www/ /usr/share/nginx/html/
