@@ -3,3 +3,8 @@
  npm install -g @ionic/cli@6.12.3
 
  ionic start appTest blank
+
+
+# how use
+ 
+docker build - < Dockerfil e
