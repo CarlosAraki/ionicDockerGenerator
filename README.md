@@ -7,4 +7,5 @@
 
 # how use
  
-docker build - < Dockerfil e
+docker build . -t ionic/app
+docker run -d --name ionic/app --network host ionic/app
