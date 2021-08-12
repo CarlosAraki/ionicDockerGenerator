@@ -10,3 +10,5 @@
 docker build . -t appionic/app
 docker run -d --name appionic/app --network host appionic/app
 docker run -d --name appionic/app --network host appionic/app
+
+docker build -t appcompiler .
